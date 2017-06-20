@@ -9,4 +9,5 @@ angular.module('500lines',[]).controller('Spreadsheet',function($scope, $timeout
       curr = (isNaN(cur) ? String.fromCodePoint(cur.codePointAt()+1):cur+1);
     }
   }
+  
 });
