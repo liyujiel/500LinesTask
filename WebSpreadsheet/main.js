@@ -6,7 +6,7 @@ angular.module('500lines',[]).controller('Spreadsheet',function($scope, $timeout
     while (cur<=end){
       yield cur;
       //If it's a number, increase it by one; otherwise move to next letter
-      curr = (isNaN(cur) ? String.fromCodePoint(cur.codePointAt()+1):cur+1);
+      cur = (isNaN(cur) ? String.fromCodePoint(cur.codePointAt()+1):cur+1);
     }
   }
 
@@ -29,7 +29,7 @@ angular.module('500lines',[]).controller('Spreadsheet',function($scope, $timeout
     // Restore the previous .sheet; reset to default if it's the first run
     $scope.sheet = angular.fromJson( localStorage.getItem( '' ));
     if(!$scope.sheet){$scope.reset();}
-    $scope.worker = new Worker('woker.js');
+    $scope.worker = new Worker('worker.js');
   }).call();
 
   //Define the calculation handler; not calling yet
