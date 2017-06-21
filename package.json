@@ -1,0 +1,25 @@
+{
+  "name": "500lines",
+  "version": "1.0.0",
+  "description": "simple test for 500lines or less",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liyujiel/500LinesTask.git"
+  },
+  "keywords": [
+    "500Lines"
+  ],
+  "author": "Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liyujiel/500LinesTask/issues"
+  },
+  "homepage": "https://github.com/liyujiel/500LinesTask#readme",
+  "dependencies": {
+    "traceur": "0.0.111"
+  }
+}
